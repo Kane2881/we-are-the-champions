@@ -43,6 +43,7 @@ img {
   padding: 15px 20px;
   font-size: 14px;
   font-family: "Inter", sans-serif;
+  cursor: pointer;
 }
 
 #publish-button {
@@ -56,6 +57,11 @@ img {
   border-radius: 6px;
   margin-bottom: 10px;
   padding: 15px;
+}
+
+#publish-button:hover {
+  background-color: #38bdf8;
+  cursor: pointer;
 }
 
 ul {

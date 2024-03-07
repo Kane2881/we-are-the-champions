@@ -23,7 +23,11 @@ const endorsementListEl = document.getElementById("endorsement-list");
 publishButtonEl.addEventListener("click", function () {
   let inputValue = inputFieldEl.value;
 
-  push(endorsementListDB, inputValue);
+  if (inputValue === "") {
+    alert("Please fill out the input field before publishing");
+  } else {
+    push(endorsementListDB, inputValue);
+  }
 
   clearInputFieldEl();
 });
